@@ -12,6 +12,7 @@ public class Kruh {
 
 
     public void dataCollect() {
+        //zepta se usera o zadani informaci o obrazci
         System.out.println("Zapis polomer kruhu");
         int r = user.nextInt();
         hodnoty.add(r);

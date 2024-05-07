@@ -1,7 +1,9 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Obdelnik extends  Obrazce{
+    //nacitani od uzivatele
     Scanner user = new Scanner(System.in);
+    //uklada hodnoty do list nazvu honodnoty
     ArrayList<Integer> hodnoty = new ArrayList<>();
     private int stranaB;
 
@@ -12,6 +14,7 @@ public class Obdelnik extends  Obrazce{
 
     @Override
     public void dataCollect() {
+        //zepta se usera o zadani informaci o obrazci
         System.out.println("napis stranu A obdelnik ");
         int stranaA = user.nextInt();
         System.out.println("napis stranu B obdelnik ");
@@ -28,6 +31,7 @@ public class Obdelnik extends  Obrazce{
 
     @Override
     public void obvod() {
+
         System.out.println("Obvod obdelniku");
         System.out.println((2*(hodnoty.get(0)+hodnoty.get(1))));
     }

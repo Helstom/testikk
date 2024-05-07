@@ -7,6 +7,7 @@ public class Ctverec extends Obrazce{
         super(stranaA);
     }
     @Override public void dataCollect(){
+        //zepta se usera o zadani informaci o obrazci
         System.out.println("napis stranu A ctverece ");
         int stranaA = user.nextInt();
         hodnoty.add(stranaA);

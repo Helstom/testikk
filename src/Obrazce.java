@@ -1,4 +1,6 @@
 abstract class Obrazce {
+    // abstract trida
+    //
     private int stranaA;
 
 
@@ -10,13 +12,7 @@ abstract class Obrazce {
 
     public abstract void obvod();
 
-    public int getStranaA() {
-        return stranaA;
-    }
 
-    public void setStranaA(int stranaA) {
-        this.stranaA = stranaA;
-    }
 
     public abstract void obsah();
 }
