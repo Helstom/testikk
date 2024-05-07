@@ -17,9 +17,7 @@ public class Obdelnik extends  Obrazce{
         System.out.println("napis stranu B obdelnik ");
         int stranaB = user.nextInt();
 
-        if (stranaB < stranaA){
-        System.out.println("strana B je mensi nez strana A");
-    } else if (stranaA == stranaB) {
+        if (stranaA == stranaB) {
         System.out.println("strany jsou stejne nejednase o obdelnik");
     }
         else {
@@ -30,13 +28,14 @@ public class Obdelnik extends  Obrazce{
 
     @Override
     public void obvod() {
-        System.out.println("Obvod");
-        System.out.println(hodnoty.get(0)*hodnoty.get(1));
+        System.out.println("Obvod obdelniku");
+        System.out.println((2*(hodnoty.get(0)+hodnoty.get(1))));
     }
 
     @Override
     public void obsah() {
-        System.out.println("Obsah");
-        System.out.println(2*(hodnoty.get(0)+hodnoty.get(1)));
+        System.out.println("Obsah obdleniku");
+        System.out.println((hodnoty.get(0)*hodnoty.get(1)));
+
     }
 }

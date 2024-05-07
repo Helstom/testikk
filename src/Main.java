@@ -1,21 +1,37 @@
 
 public class Main {
     public static void main(String[] args) {
-      Ctverec test = new Ctverec(0);
-      Obdelnik test2 = new Obdelnik(0,0);
-      Kruh test3 = new Kruh(0);
 
-      test.dataCollect();
-      test.obvod();
-      test.obsah();
+        // instance Ctverec , Obdelnik , Kruh
+      Ctverec ctv = new Ctverec(0);
+      Obdelnik obd = new Obdelnik(0,0);
+      Kruh kru = new Kruh(0);
 
-      test2.dataCollect();
-      test2.obvod();
-      test2.obsah();
+      //metody tridy Ctverec
+        // vezme data od uzivatele
+      ctv.dataCollect();
+        // vypocita obvod a obsah
+      ctv.obvod();
+      ctv.obsah();
 
-      test3.dataCollect();
-      test3.obvod();
-      test3.obsah();
+
+
+
+        //metody tridy Obdelnik
+        // vezme data od uzivatele
+      obd.dataCollect();
+        // vypocita obvod a obsah
+      obd.obvod();
+      obd.obsah();
+
+
+
+        //metody tridy Kruh
+        // vezme data od uzivatele
+        kru.dataCollect();
+         // vypocita obvod a obsah
+         kru.obvod();
+        kru.obsah();
 
 
     }
